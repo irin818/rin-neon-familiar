@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /rin-neon-familiar/
+
+Sitemap: https://irin818.github.io/rin-neon-familiar/sitemap.xml
