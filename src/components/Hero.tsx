@@ -5,9 +5,10 @@ import { ArrowDownIcon, ChevronRightIcon, WaveformIcon } from './Icons'
 
 interface HeroProps {
   locale: Locale
+  onEnterGame: () => void
 }
 
-export function Hero({ locale }: HeroProps) {
+export function Hero({ locale, onEnterGame }: HeroProps) {
   const sectionRef = useRef<HTMLElement>(null)
   const [synced, setSynced] = useState(false)
 
@@ -25,7 +26,7 @@ export function Hero({ locale }: HeroProps) {
         headingBefore: '与',
         headingAfter: '同频',
         body: '连接霓虹城的失落频道，和她一起完成今晚的信号任务。',
-        primary: '进入频道',
+        primary: '进入霓虹都市',
         secondary: '查看档案',
         scroll: '向下进入系统',
         artAlt: 'RIN 在霓虹城市天台向访客伸出手',
@@ -38,7 +39,7 @@ export function Hero({ locale }: HeroProps) {
         headingBefore: 'SYNC',
         headingAfter: 'NOW',
         body: 'Reconnect the lost channel of Neon City and complete tonight’s signal mission together.',
-        primary: 'ENTER CHANNEL',
+        primary: 'ENTER NEON CITY',
         secondary: 'OPEN ARCHIVE',
         scroll: 'SCROLL TO BOOT',
         artAlt: 'RIN reaches toward the visitor from a neon city rooftop',
@@ -86,9 +87,9 @@ export function Hero({ locale }: HeroProps) {
         </h1>
         <p className="hero__body">{copy.body}</p>
         <div className="hero__actions">
-          <a className="button button--primary" href="#story">
+          <button className="button button--primary" type="button" onClick={onEnterGame}>
             <span>{copy.primary}</span><ChevronRightIcon />
-          </a>
+          </button>
           <a className="button button--ghost" href="#archive">
             <span>{copy.secondary}</span><ChevronRightIcon />
           </a>

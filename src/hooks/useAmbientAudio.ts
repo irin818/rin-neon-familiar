@@ -58,5 +58,5 @@ export function useAmbientAudio() {
 
   useEffect(() => stop, [stop])
 
-  return { enabled, toggle }
+  return { enabled, toggle, stop }
 }
