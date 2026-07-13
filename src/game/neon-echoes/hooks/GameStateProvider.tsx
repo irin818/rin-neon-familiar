@@ -18,7 +18,7 @@ import {
   serializeWorldState,
   type SaveReadResult,
 } from '../core/saveManager'
-import { createInitialWorldState, worldStateReducer } from '../core/state'
+import { worldStateReducer } from '../core/state'
 import type { GameAction, WorldState } from '../core/types'
 
 type SaveStatus = 'saved' | 'saving' | 'unavailable'
@@ -89,8 +89,4 @@ export function useGameState() {
   const context = useContext(GameStateContext)
   if (!context) throw new Error('useGameState must be used inside GameStateProvider')
   return context
-}
-
-export function useFreshGameState() {
-  return createInitialWorldState()
 }
