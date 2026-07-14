@@ -1,4 +1,4 @@
-# Hero design handoff
+# Visual design handoff
 
 The accepted desktop concept is [`approved-hero-concept.png`](./approved-hero-concept.png) at the native review viewport of **1586 × 992**. The final implementation was captured at the same CSS-pixel viewport and compared directly against this source.
 
@@ -30,5 +30,29 @@ The accepted desktop concept is [`approved-hero-concept.png`](./approved-hero-co
 ## Intentional deviations
 
 - The bottom status chips use simpler scalable polygons than the raster concept so they remain readable across breakpoints.
-- Secondary-section image concepts could not be generated because the image service was unavailable during the later generation pass. Story, archive and game sections therefore extend the accepted hero system with the remaining supplied assets instead of introducing unrelated imagery.
 - Rabbit signals are code-drawn abstract game markers, not additional characters.
+
+## Neon Echoes Chapter 0 concepts
+
+The game module was guided by two additional native **1672 × 941** review concepts:
+
+- [`neon-echoes-exploration-concept.png`](./neon-echoes-exploration-concept.png): scene exploration, hotspot, HUD and inventory hierarchy.
+- [`neon-echoes-acoustic-concept.png`](./neon-echoes-acoustic-concept.png): waveform matching, dual-parameter controls and success action hierarchy.
+
+Both are retained as design evidence only. The live module uses the supplied production assets in `public/assets/` and code-rendered UI; no generated character pixels ship to the website.
+
+### Chapter 0 fidelity ledger
+
+| Checkpoint | Concept target | Final render | Resolution |
+| --- | --- | --- | --- |
+| Character boundary | Recognizable supplied green / pink RIN channels only | Every scene background maps to one of the four supplied RIN derivatives | No generated or unrelated character is rendered |
+| Exploration frame | Full-bleed rain-darkened art, top mission, right relationship trace, bottom tools | Fixed scene viewport with normalized hotspots, scan/rain layers and four-corner HUD | Hierarchy retained while scaling from 1672 × 941 to 390 × 844 |
+| Reality Graffiti | Three-slot tool rail with a usable Blind Eye | Three data-defined glyphs; Blind Eye unlocks, recognizes a closed trace and disables the watcher | Live canvas replaces the concept's static tool card |
+| Acoustic key | Two overlaid waves, frequency / phase controls and dominant sync action | Deterministic SVG waveform comparison, two sliders, step controls and ≤8% completion threshold | Control grammar and acid/pink wave contrast retained |
+| Copy and chapter flow | Chapter label, action objective, signal trace and short companion prompts | Chinese / English copy is data-driven across five nodes and three safehouse choices | Copy was rewritten for the implemented scene graph, not copied from raster text |
+
+### Chapter 0 intentional deviations
+
+- The exploration concept shows a bespoke corridor composition. The live build reuses the approved supplied images with crop, depth and color treatments so the public asset boundary remains auditable.
+- HUD panels collapse and hide secondary labels on small screens; interaction targets and the current objective remain visible.
+- The acoustic interface uses vector waveforms and native range controls for keyboard, touch and reduced-motion support instead of rasterized controls.

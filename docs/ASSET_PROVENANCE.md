@@ -14,7 +14,13 @@ Transformation date: 2026-07-11. Production images were encoded locally with Sha
 
 ## Design concept
 
-`docs/design/approved-hero-concept.png` (`d43ceca3dad3b9526c8a8f72616b82068485ab64ce2d456c7e13f1220e709336`) is a UI concept produced with the built-in image-generation tool from the supplied interface reference and supplied RIN imagery. It is retained as design evidence and is not rendered as the live website UI.
+The following UI concepts were produced with the built-in image-generation tool from the supplied interface reference and supplied RIN imagery. They are retained as design evidence and are not rendered as the live website UI.
+
+| Design evidence | SHA-256 | Purpose |
+| --- | --- | --- |
+| `docs/design/approved-hero-concept.png` | `d43ceca3dad3b9526c8a8f72616b82068485ab64ce2d456c7e13f1220e709336` | Original website hero |
+| `docs/design/neon-echoes-exploration-concept.png` | `9aec328dd331739197125c98f1e63bd8b154d7ba7d428d5565570b5ff22b821f` | Chapter 0 exploration HUD |
+| `docs/design/neon-echoes-acoustic-concept.png` | `4b7e759a86975cdb682f6dd2d06f345a6b5bac1c9a320857266d799fb0e2a290` | Acoustic hacking interface |
 
 ## Character boundary
 
